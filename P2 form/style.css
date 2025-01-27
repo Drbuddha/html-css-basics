@@ -1,0 +1,98 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ccc;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.header {
+    max-width: 600px;
+    padding: 20px;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-shadow: 4px 3px 5px rgba(1, 1, 1, 0.1);
+    border-radius: 10px;
+}
+
+.header>h1 {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+span {
+    font-size: 15px;
+}
+
+.fcontain {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.control {
+    display: flex;
+    flex-direction: column;
+}
+
+.address {
+    grid-column: 1 / span 2;
+}
+
+.address>textarea {
+    width: 100%;
+}
+
+label {
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+
+input, textarea, select {
+    padding: 6px 9px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline-color: red;
+}
+
+.buttom {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+button {
+    background-color: red;
+    border-radius: 5px;
+    padding: 6px 10px;
+    color: white;
+    border: transparent solid 2px;
+    transition: 0.3s ease-in;
+}
+
+button:hover {
+    background-color: aliceblue;
+    color: black;
+    border: red solid 2px;
+    transition: 0.3s ease-out;
+    cursor: pointer;
+}
+
+@media(max-width: 460px) {
+    .address {
+        grid-column: 1 / span 1;
+    }
+}

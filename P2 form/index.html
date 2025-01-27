@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>
+                Job Application <span>(Web)</span>
+            </h1>
+            <!-- Form box -->
+            <form action="">
+                <!-- Content inside form box -->
+                <div class="fcontain">
+                    <!-- First Name  -->
+                    <div class="control">
+                        <label for="f_name">
+                            First name
+                        </label>
+                        <input type="text" id="f_name" placeholder="Enter your First Name">
+                    </div>
+                    <!-- last name -->
+                    <div class="control">
+                        <label for="l_name">
+                            Last name
+                        </label>
+                        <input type="text" id="l_name" placeholder="Enter your Last Name">
+                    </div>
+                    <!-- Email -->
+                    <div class="control">
+                        <label for="Email">
+                            Email
+                        </label>
+                        <input type="email" id="Email" placeholder="Enter your Email address">
+                    </div>
+                    <!-- Job role select -->
+                    <div class="control">
+                        <label for="j_role">
+                            Job Role
+                        </label>
+                        <select name="j_role" id="j_role">
+                            <option value="">Select a Job</option>
+                            <option value="frontend">Frontend Developer</option>
+                            <option value="backend">Backend Developer</option>
+                            <option value="fullstack">Fullstack Developer</option>
+                            <option value="UI_UX">UI/UX Designer</option>
+                        </select>
+                    </div>
+                    <!-- address -->
+                    <div class="address">
+                        <label for="address">Address</label>
+                        <textarea name="address" id="address" rows="4" cols="50"
+                            placeholder="Enter your physical address"></textarea>
+                    </div>
+                    <!-- city -->
+                    <div class="control">
+                        <label for="city">
+                            City
+                        </label>
+                        <input type="text" id="city" placeholder="Enter your City Name">
+                    </div>
+                    <!-- pincode -->
+                    <div class="control">
+                        <label for="pincode">
+                            Pin Code
+                        </label>
+                        <input type="number" value="number" id="pincode" name="pincode"
+                            placeholder="Enter your pin-code">
+                    </div>
+                    <!-- date -->
+                    <div class="control">
+                        <label for="date">
+                            Date
+                        </label>
+                        <input type="date" id="date" name="date">
+                    </div>
+                    <!-- CV -->
+                    <div class="control">
+                        <label for="upload"> Upload Your CV </label>
+                        <input type="file" id="upload" name="upload" />
+                    </div>
+                </div>
+            </form>
+            <!-- Buttom -->
+            <div class="buttom">
+                <button type="submit">Apply Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
