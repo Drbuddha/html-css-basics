@@ -49,6 +49,7 @@ span {
 }
 
 .address>textarea {
+    outline: 2px solid red;
     width: 100%;
 }
 
@@ -65,7 +66,7 @@ input, textarea, select {
 }
 
 input:focus {
-    outline-color: red;
+    outline: 2px solid red;
 }
 
 .buttom {

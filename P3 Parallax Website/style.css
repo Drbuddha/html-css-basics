@@ -1,0 +1,71 @@
+/* learn to class proerty  */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    font-size: 15px;
+    font-weight: 400px;
+    line-height: 1.6em;
+    color: #666;
+}
+
+.img1 {
+    background-image: url(images/image1.png);
+    min-height: 100%;
+}
+
+.img2 {
+    background-image: url(images/image2.png);
+    min-height: 400px;
+}
+
+.img3 {
+    background-image: url(images/image3.png);
+    min-height: 400px;
+}
+
+.img1, .img2, .img3 {
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    font-size: 27px;
+    letter-spacing: 8px;
+    color: black;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.textbg {
+    background-color: black;
+    color: white;
+    padding: 20px;
+}
+
+.text_area {
+    padding: 50px 80px;
+    text-align: center;
+}
+
+.text_light {
+    background-color: #f4f4f4;
+    color: #666;
+}
+
+.text_dark {
+    background-color: #282e34;
+    color: #ddd;
+}

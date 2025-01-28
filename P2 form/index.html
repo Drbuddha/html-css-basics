@@ -70,8 +70,8 @@
                         <label for="pincode">
                             Pin Code
                         </label>
-                        <input type="number" value="number" id="pincode" name="pincode"
-                            placeholder="Enter your pin-code">
+                        <input type="number" id="pincode" name="pincode" placeholder="Enter your pin-code" min="0"
+                            oninput="this.value = this.value.replace(/[^0-9]/g, '')">
                     </div>
                     <!-- date -->
                     <div class="control">
