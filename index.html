@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Project Navigator : Ronak Subedi</title>
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    function handleImageError(img, text) {
+      const placeholder = `<div class='preview-placeholder'>
+        <div style="text-align: center">
+
+          <span style="font-size: 18px; color: #666; margin-bottom: 10px">📁 ${text}</span>
+          <br><br>
+          <span style="font-size: 14px; color: #999; font-style: italic">
+            No preview image found at:<br>${img.src}
+          </span>
+        </div>
+      </div>`;
+      img.outerHTML = placeholder;
+    }
+  </script>
+</head>
+
+<body>
+  <h1>Project Navigator</h1>
+
+  <div class="project-grid">
+    <div class="project-card">
+      <a href="./P1 biography/index.html">
+        <!-- Add Your Image Here -->
+        <img src="./P1 biography/preview.jpg" alt="Biography Preview" class="preview-img"
+          onerror="handleImageError(this, 'Biography Project')" />
+        <div class="project-info">
+          <h3 class="project-title">Biography</h3>
+        </div>
+      </a>
+    </div>
+    <div class="project-card">
+      <a href="./P2 form/index.html">
+        <!-- Add Your Image Here -->
+        <img src="./P2 form/preview.jpg" alt="Form Preview" class="preview-img"
+          onerror="handleImageError(this, 'Form Project')" />
+        <div class="project-info">
+          <h3 class="project-title">Form</h3>
+        </div>
+      </a>
+    </div>
+
+    <div class="project-card">
+      <a href="./P3 Parallax Website/index.html">
+        <!-- Add Your Image Here -->
+        <img src="./P3 Parallax Website/preview.jpg" alt="Parallax Preview" class="preview-img"
+          onerror="handleImageError(this, 'Parallax Project')" />
+        <div class="project-info">
+          <h3 class="project-title">Parallax Website</h3>
+        </div>
+      </a>
+    </div>
+
+    <div class="project-card">
+      <a href="./P4 Landing Page/index.html">
+        <!-- Add Your Image Here -->
+        <img src="./P4 Landing Page/preview.jpg" alt="Landing Page Preview" class="preview-img"
+          onerror="handleImageError(this, 'Landing Page Project')" />
+        <div class="project-info">
+          <h3 class="project-title">Landing Page</h3>
+        </div>
+      </a>
+    </div>
+
+  </div>
+</body>
+
+</html>
